@@ -1,5 +1,60 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
     background-color: #C5D9E4;
     font-family: 'Merriweather', serif;
   }
 
+/*
+ ~Longform~
+margin-top: 40px;
+margin-right: 10px;
+margin-bottom: 30px;
+margin-left: 15px;
+
+~Shorthand T | R | B | L~
+margin:40px 10px 30px 15px;
+
+~Shorthand~
+margin:40px;
+
+~Two Value Shorhand Top/Bottom | Left/Right~
+margin:40px auto;
+*/
+
+  main {
+    background-color:#ffffff;
+    width:80vw;
+    max-width:1140px;
+    margin:auto;
+    border: 2px solid #00a6ff;
+  }
+
+  header.primary {
+    background-color: aquamarine;
+    padding:20px;
+    background-image: url("../img/bg_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hgroup h1 a{
+    color: #ffffff;
+    text-shadow:2px 2px #00a6ff;
+    font-size: 2.5rem;
+  }
+
+  .hgroup h2 {
+    color: #ffffff;
+    text-shadow:1px 1px #00a6ff;
+    font-size: 1.5rem;
+  }

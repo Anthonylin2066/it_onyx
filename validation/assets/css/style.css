@@ -1,15 +1,13 @@
 input[type=text], select {
     margin: 8px 0;
     display: inline-block;
-    box-sizing: border-box;
-}
-
-/*does not function... work in progress*/
-.formlabel {
-    display: inline-block;
     width: 150px;
     text-align: right;
     padding: 5px;
     font-weight: bold;
+    box-sizing: border-box;
 }
+
+/*does not function proprely... work in progress*/
+
 

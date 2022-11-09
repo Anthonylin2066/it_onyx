@@ -11,7 +11,7 @@
 <body>
 <main>
 
-<header role="banner" class="primary container">
+<header class="primary container">
     <div class="hgroup">
         <h1>New Patient Registration</h1>
         <h3>Please fill out the form below</h3>
@@ -23,10 +23,10 @@
          <input type="text" id="Name" name="FirstName" size="30" maxlength="30">
          <br>
          <label for="Middle"><b>Middle Initial:</b> </label>
-         <input type="text" id="Name" name="MiddleInitial" size="1" maxlength="1">
+         <input type="text" id="Middle" name="MiddleInitial" size="1" maxlength="1">
          <br>
          <label for="Last"><b>Last Name:</b> </label>
-         <input type="text" id="Name" name="LastName" size="30" maxlength="30">
+         <input type="text" id="Last" name="LastName" size="30" maxlength="30">
          <br>
          <label for="Email"><b>Email:</b> </label>
          <input type="text" id="Email" name="Email" size="30" maxlength="30">
@@ -120,17 +120,17 @@
         </select>
 
         <label for="City/State/Zip"></label>
-        <input type="text" id="City/State/Zip" name="City/State/Zip" size="5" maxlength="5">
+        <input type="text" id="Zip" name="Zip" size="5" maxlength="5">
         <hr>
         <label><b>Taking Medications:</b> </label>
         <label for="Yes"><input type="checkbox" name="Yes" id="Yes" value="Y">Yes</label>
         <label for="No"><input type="checkbox" name="No" id="No" value="N">No</label>
         <br>
-        <label for="ifyes">If yes, list medications here: </label>
-        <input type="text" id="Name" name="MedicationsList" rows="5" cols="40"> <!--rows and cols wont change-->
+        <label for="medication">If yes, list medications here: </label>
+        <input type="text" id="medication" name="MedicationsList"> <!--rows and cols wont change-->
         <hr>
         <input type="submit" value="Submit Patient Form">
-    </div>
+
 </main>
 </body>
 </html>

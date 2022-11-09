@@ -4,5 +4,12 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-
+/*does not function... work in progress*/
+.formlabel {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    padding: 5px;
+    font-weight: bold;
+}
 

@@ -95,7 +95,7 @@ margin:40px auto;
     display:block;
     background-color:rgb(108, 70, 157);
     color:#fff;
-    padding:10px 10px 10px 0;
+    padding:10px 10px 10px 10px;
     border: 1px solid #ffffff;
     margin-bottom:10px;
     border-radius:20px 0;
@@ -103,6 +103,8 @@ margin:40px auto;
     text-decoration:none;
     text-align:right;
   }
+
+
 
   header.primary nav a:hover{
     background-color: rgba(108, 70, 157);
@@ -118,4 +120,27 @@ margin:40px auto;
   border-left:7.5px solid #d94179;
   padding: 5px 7.5px;
   border-radius: 15px 0;
+}
+
+#blog {
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(16,77,115,1) 100%);
+  border-top: 6px double #0a96A6;
+  border-bottom: 6px double #0a96A6;
+}
+
+#blog > h2 {
+  color:#C5D9E4;
+  text-shadow: 2px 2px #000;
+  font-size:2.2rem;
+  margin-left:20px;
+}
+
+#blog article.post {
+  background:#fff;
+  margin:20px;
+  padding:20px;
+}
+
+#blog figure {
+  margin:0;
 }

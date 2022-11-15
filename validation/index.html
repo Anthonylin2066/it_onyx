@@ -6,6 +6,10 @@
   <meta name="description" content="Bruce Validation Assignment">
   <meta name="author" content="Anthony Lin">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="assets/js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </head>
 
 <body>
@@ -19,38 +23,64 @@
 </header>
 
 <div class="medform">
-     <form id="formlabel" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+      <form id="SubmitExampleValidateForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
          <label for="Name"><b>First Name:</b> </label>
-         <input type="text" id="Name" name="FirstName" size="30" maxlength="30">
+         <input type="text" id="Name" name="Name" size="30" maxlength="30"
+         data-rule-required="true"  data-msg-required="First Name is Required">
+         <label for="Age" class="error"></label>
          <br>
+
          <label for="Middle"><b>Middle Initial:</b> </label>
          <input type="text" id="Middle" name="MiddleInitial" size="1" maxlength="1">
          <br>
+
          <label for="Last"><b>Last Name:</b> </label>
-         <input type="text" id="Last" name="LastName" size="30" maxlength="30">
+         <input type="text" id="Last" name="LastName" size="30" maxlength="30"
+         data-rule-required="true"  data-msg-required="Last Name is Required">
          <br>
+
          <label for="Email"><b>Email:</b> </label>
-         <input type="text" id="Email" name="Email" size="30" maxlength="30">
+         <input type="text" id="Email" name="Email" size="30" maxlength="30"
+         data-rule-required="true"  data-msg-required="Email is Required">
          <br>
-         <label><b>Sex:</b> </label>
-        <label for="Male"><input type="checkbox" name="sex1" id="Male" value="M">Male</label>
-        <label for="Female"><input type="checkbox" name="sex2" id="Female" value="F">Female</label>
-        <label for="N/A"><input type="checkbox" name="sex3" id="N/A" value="N">N/A</label>
+
+        <label><b>Sex:</b> </label>
+        <label for="Male"><input type="checkbox" name="sex" id="male" value="male"
+          data-rule-required="true" data-msg-required="This field is Required"/>Male</label>
+          <label for="Female"><input type="checkbox" name="sex" id="female" value="female">Female</label>
+          <label for="N/A"><input type="checkbox" name="sex" id="n/a" value="n/a">N/A</label>
+          <label for="sex" class="error"></label>
         <br>
+
         <label for="Birthday"><b>Birthday:</b> </label>
-        <input type="text" id="Birthday" name="Birthday" size="8" maxlength="8">
+        <input type="text" id="Birthday" name="Birthday" size="8" maxlength="8"
+        data-rule-required="true"  data-msg-required="Birthday is Required (Month/Day/Year)">
         <br>
+
         <label for="Height"><b>Height (inches):</b> </label>
-        <input type="text" id="Height" name="Height" size="3" maxlength="3">
+        <input type="text" id="Height" name="Height" size="3" maxlength="3" 
+          data-rule-required="true" data-msg-required="Height is Required" 
+          data-rule-number="true" data-msg-number="Height must be a number in inches"
+          data-rule-min="12" data-msg-min="Height must be greater than or equal to 12 years"
+          data-rule-max="120" data-msg-max="Age must be less than or equal to 120 years">
         <br>
+
         <label for="Weight"><b>Weight (pounds):</b> </label>
-        <input type="text" id="Weight" name="Weight" size="3" maxlength="3">
+        <input type="text" id="Weight" name="Weight" size="3" maxlength="3"
+          data-rule-required="true" data-msg-required="Weight is Required" 
+          data-rule-number="true" data-msg-number="Weight must be a number in pounds"
+          data-rule-min="10" data-msg-min="Weight must be greater than or equal to 10 pounds"
+          data-rule-max="500" data-msg-max="Weight must be less than or equal to 500 pounds">
         <hr>
+
         <label for="PhoneNumber"><b>Phone Number:</b> </label>
-        <input type="text" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14">
+        <input type="text" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14"
+        data-rule-required="true" data-msg-required="Phone Number is Required (US # Only)"> 
         <br>
+
         <label><b>Martial Status:</b> </label>
-        <select name="Auto" id="Auto">
+
+        <select name="Auto" id="Auto" required>
         <option value="">Select a Status...</option>
         <option value="S">Single</option>
         <option value="M">Married</option>
@@ -59,14 +89,19 @@
         <option value="W">Widowed</option>
         </select>
         <br>
+
         <label for="Address"><b>Address:</b> </label>
-        <input type="text" id="Address" name="Address" size="30" maxlength="30">
+        <input type="text" id="Address" name="Address" size="30" maxlength="30"
+        data-rule-required="true" data-msg-required="Address is Required">
         <br>
+
         <label for="City/State/Zip"><b>City/State/Zip: </b> </label>
-        <input type="text" id="City/State/Zip" name="City/State/Zip" size="30" maxlength="30">
+        <input type="text" id="City/State/Zip" name="City/State/Zip" size="30" maxlength="30"
+        data-rule-required="true"  data-msg-required="City is Required">
 
         <label for="City/State/Zip"><b> ,</b> </label>
-        <select name="State" id="State">
+        <select name="State" id="State" required>
+            <option value="">Select a State...</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -121,17 +156,32 @@
         </select>
 
         <label for="City/State/Zip"></label>
-        <input type="text" id="Zip" name="Zip" size="5" maxlength="5">
+        <input type="text" id="Zip" name="Zip" size="5" maxlength="5"
+        data-rule-required="true"  data-msg-required="Zip Code (5 Digits) is Required">
         <hr>
+
         <label><b>Taking Medications:</b> </label>
-        <label for="Yes"><input type="checkbox" name="Yes" id="Yes" value="Y">Yes</label>
-        <label for="No"><input type="checkbox" name="No" id="No" value="N">No</label>
+        <label for="Yes"><input type="checkbox" name="mymeds" id="yes" value="yes"
+        data-rule-required="true" data-msg-required="This field is Required"/>Yes</label>
+        <label for="No"><input type="checkbox" name="mymeds" id="no" value="no">No</label>
+        <label for="mymeds" class="error"></label>
         <br>
+
+  
+
         <label for="medication">If yes, list medications here: </label>
         <input type="text" id="medication" name="MedicationsList"> <!--rows and cols wont change-->
         <hr>
         <input type="submit" value="Submit Patient Form">
       </form>
+
+      <!-----JavaScript----->
+      <script>
+        $( "#SubmitExampleValidateForm" ).validate({
+        
+        });
+      </script>
+
     </div>
 </main>
 </body>

@@ -1,0 +1,3 @@
+$( "#SubmitExampleValidateForm" ).validate({
+        
+});

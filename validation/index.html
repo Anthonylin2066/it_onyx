@@ -6,7 +6,6 @@
   <meta name="description" content="Bruce Validation Assignment">
   <meta name="author" content="Anthony Lin">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="text/javascript" src="assets/js/scripts.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
@@ -27,7 +26,6 @@
          <label for="Name"><b>First Name:</b> </label>
          <input type="text" id="Name" name="Name" size="30" maxlength="30"
          data-rule-required="true"  data-msg-required="First Name is Required">
-         <label for="Age" class="error"></label>
          <br>
 
          <label for="Middle"><b>Middle Initial:</b> </label>
@@ -45,11 +43,10 @@
          <br>
 
         <label><b>Sex:</b> </label>
-        <label for="Male"><input type="checkbox" name="sex" id="male" value="male"
-          data-rule-required="true" data-msg-required="This field is Required"/>Male</label>
-          <label for="Female"><input type="checkbox" name="sex" id="female" value="female">Female</label>
-          <label for="N/A"><input type="checkbox" name="sex" id="n/a" value="n/a">N/A</label>
-          <label for="sex" class="error"></label>
+        <label>Male<input type="checkbox" name="Sex" id="male" value="male" data-rule-required="true"></label>
+          <label>Female<input type="checkbox" name="Sex" id="female" value="female"></label>
+          <label>N/A<input type="checkbox" name="Sex" id="Sex" value="n/a"></label>
+          <label for="Sex" class="error"></label>
         <br>
 
         <label for="Birthday"><b>Birthday:</b> </label>
@@ -62,7 +59,7 @@
           data-rule-required="true" data-msg-required="Height is Required" 
           data-rule-number="true" data-msg-number="Height must be a number in inches"
           data-rule-min="12" data-msg-min="Height must be greater than or equal to 12 inches"
-          data-rule-max="120" data-msg-max="Height must be less than or equal to 150 inches">
+          data-rule-max="150" data-msg-max="Height must be less than or equal to 150 inches">
         <br>
 
         <label for="Weight"><b>Weight (pounds):</b> </label>
@@ -80,7 +77,7 @@
 
         <label><b>Martial Status:</b> </label>
 
-        <select name="Auto" id="Auto" required>
+        <select name="MartialStatus" id="MartialStatus" required>
         <option value="">Select a Status...</option>
         <option value="S">Single</option>
         <option value="M">Married</option>
@@ -161,10 +158,10 @@
         <hr>
 
         <label><b>Taking Medications:</b> </label>
-        <label for="Yes"><input type="checkbox" name="mymeds" id="yes" value="yes"
-        data-rule-required="true" data-msg-required="This field is Required"/>Yes</label>
-        <label for="No"><input type="checkbox" name="mymeds" id="no" value="no">No</label>
-        <label for="mymeds" class="error"></label>
+        <label>Yes<input type="checkbox" name="AnyMeds" id="yes" value="yes"
+        data-rule-required="true" data-msg-required="This field is Required"></label>
+        <label>No<input type="checkbox" name="mymeds" id="mymeds" value="no"></label>
+        <label for="AnyMeds" class="error"></label>
         <br>
 
   
@@ -175,7 +172,7 @@
         <input type="submit" value="Submit Patient Form">
       </form>
 
-      <!-----JavaScript----->
+      <!--JavaScript-->
       <script>
         $( "#SubmitExampleValidateForm" ).validate({
         

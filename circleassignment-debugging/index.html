@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Circle Calculations</title>
+    <meta charset ="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <form id="CircleForm" onsubmit="return false">
+    <h2>Circle Calculations</h2>
+        <label for="radius" class="formlabel">Enter radius of the circle:</label>
+        <input type="text" id="radius" name="radius"
+               data-rule-required="true"  data-msg-required="radius is Required" 
+               data-rule-number="true" data-msg-number="radius must be floating point number"
+               data-rule-min="0" data-msg-min="radius must be greater than zero">
+        <label for="radius" class="error" id="radiuserror"></label>
+        <br> 
+
+        <label for="diameter" class="formlabel">Diameter:</label><span id="diameter"></span><br>
+        <label for="circumference" class="formlabel">Circumference:</label><span id="circumference"></span><br>
+        <label for="area" class="formlabel">Area:</label><span id="area"></span><br>
+        <br><br>
+        <input type="submit" value="Calculate" id="btnCalc" onclick="displayDiameter()">
+        <input type="submit" value="Clear" id="btnClear" onclick="clearForm()" formnovalidate>
+    </form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+<script src="assets/js/triangle.js"></script>
+</html>

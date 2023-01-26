@@ -17,14 +17,20 @@
         <label for="radius" class="error" id="radiuserror"></label>
         <br> 
 
-        <label for="diameter" class="formlabel">Diameter:</label><span id="diameter"></span><br>
-        <label for="circumference" class="formlabel">Circumference:</label><span id="circumference"></span><br>
-        <label for="area" class="formlabel">Area:</label><span id="area"></span><br>
-        <br><br>
-        <input type="submit" value="Calculate" id="btnCalc" onclick="displayDiameter()">
+        <label for="diameter" class="formlabel">Diameter:</label>
+        <span id="diameter"></span>
+        <br>
+        <label for="circumference" class="formlabel">Circumference:</label>
+        <span id="circumference"></span>
+        <br>
+        <label for="area" class="formlabel">Area:</label>
+        <span id="area"></span>
+        <br>
+        <input type="submit" value="Calculate" id="btnCalc" onclick="displayCircle()">
         <input type="submit" value="Clear" id="btnClear" onclick="clearForm()" formnovalidate>
     </form>
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>

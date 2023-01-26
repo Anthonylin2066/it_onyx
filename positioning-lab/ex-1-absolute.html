@@ -16,7 +16,6 @@
     *:after {
       box-sizing: inherit;
     }
-
     body {
       background-color: #ECECEC;
       font-weight: bold;
@@ -26,51 +25,61 @@
       line-height: 24px;
     }
 
-    #wrapper { 
-      display: flex; 
-      flex-wrap: wrap;
+    #wrapper {
       background-color: #FFF;
       border: 1px solid #c0c0c0;
-      width: 800px;
-      margin-right: auto;
-      margin-left: auto;
+      width:  800px;
+      height: 315px;
+      position: relative;
+      left: 0; 
+      right: 0; 
+      margin: 0 auto;
       text-shadow: 2px 2px #000;
-      padding-top:20px;
     }
 
     #navy {
-      width:175px;
-      height:180px;
       background-color: #001f3f;
-      margin-left:20px;
+      width:370px;
+      height:125px;
+      position: absolute;
+      top:20px;
+      left:20px;
     }
 
     #teal {
-      width:175px;
-      height:180px;
       background-color: #39CCCC;
-      margin-left:20px;
-    } 
+      width:370px;
+      height:125px;
+      position: absolute;
+      top:20px;
+      right:20px;
+    }
 
     #blue {
-    width:175px;
-      height:180px;
       background-color: #0074D9;
-      margin-left:20px;
+      width:370px;
+      height:125px;
+      position: absolute;
+      bottom:20px;
+      left: 20px;
     }
 
     #aqua {
-      width:175px;
-      height:180px;
       background-color: #7FDBFF;
-      margin-left:20px;
+      width:370px;
+      height:125px;
+      position: absolute;
+      bottom:20px;
+      right:20px;
     }
 
     #footer {
       background-color: #666;
-      clear: both;
       width:760px;
-      margin:20px;
+      position: absolute;
+      bottom: 0;
+      margin-left:auto;
+      margin-right:auto;
     }
 
     h1 {
@@ -78,11 +87,11 @@
       font-weight: normal;
       padding: 50px;
     }
-    
+
   </style>
 </head>
 <body>
-  <h1>EX-2-FLEXBOX</h1>
+  <h1>EX-1-ABSOLUTE</h1>
   <section id="wrapper">
     <div id="navy">Navy</div>
     <div id="teal">Teal</div>

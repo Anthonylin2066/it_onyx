@@ -25,12 +25,12 @@ function displayCircle() {
          // Convert numbers from strings to Floating Point
          radiusfp = parseFloat( radius ); 
 
-         // calculate the diameter
+         // calculate the circle
          diameter = calcDiameter(radiusfp);
          circumference = calcCircumference(radiusfp);
          area = calcArea(radiusfp);
 
-         // display the diameter
+         // display the circle
          document.getElementById("diameter").innerHTML = diameter.toString();
          document.getElementById("circumference").innerHTML = circumference.toString();
          document.getElementById("area").innerHTML = area.toString();

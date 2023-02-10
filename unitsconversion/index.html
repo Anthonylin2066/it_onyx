@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Unit Converter">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Anthony Lin">
+    <title>JavaScript Unit Converter (w/ AJAX)</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<form id="myform">
+    <div class="formcontainer">
+        <h1>Unit Converter (AJAX)</h1>
+            <fieldset id="detail">
+            <legend>Convert</legend>  
+            <br>
+            
+            <label class="formlabel" for="FromValue">From Value: </label>
+            <input type="text" id="FromValue" name="FromValue" size="15" maxlength="15"
+                    data-rule-required="true"  data-msg-required="Value is Required" 
+                    data-rule-number="true" data-msg-number="Value must be a Number">
+            <label for="FromValue" class="error" id="FromValueMsg"></label>
+            <br><br>
+
+            <label class="formlabel">From Unit: </label>
+                <label for="centimeters">
+                    <input type="radio" name="FromUnit" id="fromcm" value = "cm"
+                           data-rule-required="true" data-msg-required="Unit is Required" />centimeters
+                </label>
+                <label for="meters">
+                    <input type="radio" name="FromUnit" id="fromm" value = "m">meters
+                </label>
+                <label for="kilometers">
+                    <input type="radio" name="FromUnit" id="fromkm" value = "km">kilometers
+                </label>
+                <label for="inches">
+                    <input type="radio" name="FromUnit" id="fromin" value = "in">inches
+                </label>
+                <label for="feet">
+                    <input type="radio" name="FromUnit" id="fromft" value = "ft">feet
+                </label>
+                <label for="yards">
+                    <input type="radio" name="FromUnit" id="fromyd" value = "yd">yards
+                </label>
+                <label for="miles">
+                    <input type="radio" name="FromUnit" id="frommi" value = "mi">miles
+                </label>
+            <label for="FromUnit" class="error" id="FromUnitMsg"></label>
+            <br><br>
+
+            <label class="formlabel">To Unit: </label>
+                <label for="centimeters">
+                    <input type="radio" name="ToUnit" id="tocm" value = "cm"
+                           data-rule-required="true" data-msg-required="Unit is Required" />centimeters
+                </label>
+                <label for="meters">
+                    <input type="radio" name="ToUnit" id="tom" value = "m">meters
+                </label>
+                <label for="kilometers">
+                    <input type="radio" name="ToUnit" id="tokm" value = "km">kilometers
+                </label>
+                <label for="inches">
+                    <input type="radio" name="ToUnit" id="toin" value = "in">inches
+                </label>
+                <label for="feet">
+                    <input type="radio" name="ToUnit" id="toft" value = "ft">feet
+                </label>
+                <label for="yards">
+                    <input type="radio" name="ToUnit" id="toyd" value = "yd">yards
+                </label>
+                <label for="miles">
+                    <input type="radio" name="ToUnit" id="tomi" value = "mi">miles
+                </label>
+                <label for="ToUnit" class="error" id="ToUnitMsg"></label>
+                <br><br>
+
+            <label class="formlabel">Result: </label>
+            <span id="Result"></span>
+            <br><br>
+
+            <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+            <input type="button" value="Clear" name="Clear" onclick="clearform();">
+        </fieldset>
+    </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="assets/js/conveter.js"></script>
+</body>
+</html>

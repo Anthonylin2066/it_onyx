@@ -1,5 +1,87 @@
-<html>
-    <head>
-        Culinary Site
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Culinary Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width =device-width, initial-scale =1">
+  <meta name="description" content="Web Project">
+  <meta name="author" content="Anthony Lin">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section id="banner">
+    <img src="assets/img/logoculinary.png" class="logo">
+    <div class="banner-text">
+        <h1>Culinary Tips</h1>
+        <p>Step it up and chef it up!</p>
+        <div class="banner-btn">
+            <a href="#"><span></span>Find Out</a>
+            <a href="#"><span></span>Find Out</a>
+        </div>
+    </div>
+</section>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">KNIFE SKILLS</a></li>
+        <li><a href="#">DISHES</a></li>
+        <li><a href="#">ABOUT</a></li>
+    </ul>
+    </nav>
+</div>
+
+<div id="manuBtn">
+    <img src="assets/img/menu.png" id="menu">
+</div>
+
+<!--Features-->
+
+<section id="feature">
+    <div class="title-text">
+        <p>Skills</p>
+        <h1>Learn from experts</h1>
+    </div>
+
+    <div class="feature-box">
+        <div class="features">
+            <h1>Best Chefs</h1>
+        </div>
+        <div class="features-img">
+            <img src="assets/img/cucsalad.jpg">
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<script>
+    var manuBtn = document.getElementById("manuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px"
+
+    manuBtn.onclick = function() {
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "assets/img/close.png"
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src = "assets/img/menu.png"
+        }
+    }
+</script>
+
+</body>
 </html>

@@ -17,71 +17,112 @@
 <section id="banner">
     <img src="assets/img/logoculinary.png" class="logo">
     <div class="banner-text">
-        <h1>Culinary Tips</h1>
-        <p>Step it up and chef it up!</p>
-        <div class="banner-btn">
-            <a href="#"><span></span>Find Out</a>
-            <a href="#"><span></span>Find Out</a>
-        </div>
+        <h1>Best Dishes Worldwide</h1>
+        <p>Learn more about these 7 dishes from around the world.</p>
     </div>
 </section>
 
-<div id="sideNav">
+<div id="navbar">
     <nav>
-    <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">KNIFE SKILLS</a></li>
-        <li><a href="#">DISHES</a></li>
-        <li><a href="#">ABOUT</a></li>
-    </ul>
+        <ul>
+            <li><a href="#home">HOME</a></li>     
+            <li><a href="#dishes">DISHES</a></li>  
+            <li><a href="#techniques">DESSERTS</a></li>  
+            <li><a href="#about">ABOUT US</a></li>   
+        </ul>
     </nav>
 </div>
 
-<div id="manuBtn">
+<div id="menubtn">
     <img src="assets/img/menu.png" id="menu">
 </div>
 
-<!--Features-->
+<!--Content Page-->
 
 <section id="feature">
     <div class="title-text">
-        <p>Skills</p>
-        <h1>Learn from experts</h1>
+        <p>Top 10</p>
+        <h1>Featured Dishes</h1>
     </div>
 
-    <div class="feature-box">
-        <div class="features">
-            <h1>Best Chefs</h1>
-        </div>
-        <div class="features-img">
-            <img src="assets/img/cucsalad.jpg">
+<div class="feature-box">
+
+    <div class="features">
+        <h1>Rendang</h1>
+        <div class="features-desc">
+            <p>Rendang is a Minang dish originating from the Minangkabau region in West Sumatra, Indonesia. It has spread across Indonesian cuisine to the cuisines of neighbouring Southeast Asian countries such as Malaysia, Singapore, Brunei and the Philippines.</p>
         </div>
     </div>
+    <div class="features-img">
+        <img src="assets/img/beef-rendang-photo.webp">
+    </div>
+
+    <div class="features2">
+        <h1>Peking Duck</h1>
+        <div class="features-desc">
+            <p>Peking duck is a dish from Beijing that has been prepared since the Imperial era. The meat is characterized by its thin, crispy skin, with authentic versions of the dish serving mostly the skin and little meat, sliced in front of the diners by the cook.</p>
+        </div>
+    </div>
+    <div class="features-img">
+        <img src="assets/img/shutterstock_1012140586.0.jpg">
+    </div>
+
+    <div class="features3">
+        <h1>Carbonara</h1>
+        <div class="features-desc">
+            <p>Carbonara is an Italian pasta dish from Rome made with eggs, hard cheese, cured pork and black pepper. The dish arrived at its modern form, with its current name, in the middle of the 20th century. The cheese is usually Pecorino Romano, Parmigiano-Reggiano, or a combination of the two.</p>
+        </div>
+    </div>
+    <div class="features-img">
+        <img src="assets/img/2000.webp">
+    </div>
+
+    <div class="features4">
+        <h1>Paella Valenciana</h1>
+        <div class="features-desc">
+            <p>Paella is a rice dish originally from Valencia. While non-Spaniards commonly view it as Spain's national dish, Spaniards almost unanimously consider it to be a dish from the Valencian region. Valencians, in turn, regard paella as one of their identifying symbols. It is one of the best-known dishes in Spanish cuisine.</p>
+        </div>
+    </div>
+    <div class="features-img">
+        <img src="assets/img/Seafood-paella-1200x900.png">
+    </div>
+
+    <div class="features5">
+        <h1>Korean Barbecue</h1>
+        <div class="features-desc">
+            <p>Korean barbecue is a popular method in Korean cuisine of grilling meat, typically beef, pork or chicken. Such dishes are often prepared on gas or charcoal grills built into the dining table itself.</p>
+        </div>
+    </div>
+    <div class="features-img">
+        <img src="assets/img/323498672_927267858448678_5418364909193252759_n.7.jpg">
+    </div>
+
+    <div class="features6">
+        <h1>Tom Yum</h1>
+        <div class="features-desc">
+            <p>Tom yum or tom yam is a type of hot and sour Thai soup, usually cooked with shrimp. The words "tom yam" are derived from two Thai words. Tom refers to the boiling process, while yam means 'mixed'.</p>
+        </div>
+    </div>
+    <div class="features-img">
+        <img src="assets/img/292a5edf-87da-438c-bf18-5faeda1b4a8b.avif">
+    </div>
+
+    <div class="features7">
+        <h1>Beef Bourguignon</h1>
+        <div class="features-desc">
+            <p>Beef bourguignon or bœuf bourguignon, also called beef Burgundy, and bœuf à la Bourguignonne, is a French beef stew braised in red wine, often red Burgundy, and beef stock, typically flavored with carrots, onions, garlic, and a bouquet garni, and garnished with pearl onions, mushrooms, and bacon.</p>
+        </div>
+    </div>
+    <div class="features-img">
+        <img src="assets/img/shutterstock_1012140586.0.jpg">
+    </div>
+</div>
 
 </section>
 
-
-
-
-
-<script>
-    var manuBtn = document.getElementById("manuBtn")
-    var sideNav = document.getElementById("sideNav")
-    var menu = document.getElementById("menu")
-
-    sideNav.style.right = "-250px"
-
-    manuBtn.onclick = function() {
-        if(sideNav.style.right == "-250px"){
-            sideNav.style.right = "0";
-            menu.src = "assets/img/close.png"
-        }
-        else{
-            sideNav.style.right = "-250px";
-            menu.src = "assets/img/menu.png"
-        }
-    }
-</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

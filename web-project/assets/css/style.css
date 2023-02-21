@@ -4,6 +4,10 @@
     font-family: 'Playfair Display', serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #banner{
     background: linear-gradient(rgba(0, 0, 0, 0.374),#000), url(../img/102055-food-still-life-sushi.jpg);
     background-size: cover;
@@ -151,14 +155,155 @@ nav ul li a{
 
 /*features3*/
 
+.features3 {
+    flex-basis: 50%;
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.features3 h1{
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #44624a;
+}
+
+/*features4*/
+
+.features4 {
+    flex-basis: 50%;
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.features4 h1{
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #44624a;
+}
+
+/*features5*/
+
+.features5 {
+    flex-basis: 50%;
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.features5 h1{
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #44624a;
+}
+
+/*features6*/
+
+.features6 {
+    flex-basis: 50%;
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.features6 h1{
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #44624a;
+}
+
+/*features7*/
+
+.features7 {
+    flex-basis: 50%;
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.features7 h1{
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #44624a;
+}
 
 
+/*Footer*/
+footer#colophon{
+    background-color:#c0cfb2;
+    margin-top:50px;
+  }
+  
+  
+  #colophon h6{
+    padding:20px;
+    margin:0;
+    color:#fff;
+    text-align:center;
+    font-size:.7em;
+    text-transform:uppercase;
+  }
+  
+  #colophon a{
+    color:#fff;
+  }
+  
+  #colophon a:hover{
+    text-decoration:none;
+  }
 
 
+/*-----------------Desserts Page------------------*/
+#banner2{
+    background: linear-gradient(rgba(0, 0, 0, 0.374),#000), url(../img/thumb-1920-434430.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
-
-
-
+/*-----------------Contact Page------------------*/
+#banner3{
+    background: linear-gradient(rgba(0, 0, 0, 0.374),#000), url(../img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
 
 /*media queries*/

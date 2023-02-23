@@ -291,7 +291,7 @@ footer#colophon{
 
 /*-----------------Desserts Page------------------*/
 #banner2{
-    background: linear-gradient(rgba(0, 0, 0, 0.374),#000), url(../img/thumb-1920-434430.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.320),#000), url(../img/videoblocks-mousse-cake-with-chocolate-spiral-french-pastry-with-white-glaze-modern-european-dessert_rgtlo-avm_thumbnail-1080_01.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -299,12 +299,19 @@ footer#colophon{
 
 /*-----------------Contact Page------------------*/
 #banner3{
-    background: linear-gradient(rgba(0, 0, 0, 0.374),#000), url(../img/wallpaperflare.com_wallpaper.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.320),#000), url(../img/wallpaperflare.com_wallpaper.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
+/*-----------------About Page------------------*/
+#banner4{
+    background: linear-gradient(rgba(0, 0, 0, 0.320),#000), url(../img/modern.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
 /*media queries*/
 @media screen and (max-width: 770px) {

@@ -119,6 +119,13 @@ nav ul li a{
 .features-img{
     flex-basis: 50%;
     margin: auto;
+    padding-top: 100px;
+}
+
+.features-desc{
+    flex-basis: 50%;
+    margin: auto;
+    width:88%;
 }
 
 .features-img img{

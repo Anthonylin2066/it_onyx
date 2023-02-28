@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Polygon">
+    <meta name="keywords" content="HTML, CSS, JavaScript, AJAX, jQuery">
+    <meta name="author" content="Anthony Lin">
+    <title>Polygon</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="myform">
+        <div class="formcontainer">
+        <header>
+          <h2>Currency Value History</h2>
+        </header>
+            <label for="baseCurrency" class="formlabel">Base Currency</label>
+            <select id="baseCurrency" name="baseCurrency"
+              data-rule-required="true" data-msg-required="Base Currency is Required">
+              <option value="">Select a Currency</option>
+              <option id="USD" value="USD">US Dollars</option>
+              <option id="MXN" value="MXN">Mexican Peso</option>
+              <option id="CAD" value="CAD">Canadian Dollar</option>
+              <option id="EUR" value="EUR">Euro Dollar</option>
+              <option id="CNY" value="CNY">Yuan Renminbi</option>
+            </select>
+            <label id="baseError"for="baseCurrency" class="error"></label>
+          <br><br>
+
+            <label for="convertCurrency" class="formlabel">Convert to Currency</label>
+            <select id="convertCurrency" name="convertCurrency"
+              data-rule-required="true" data-msg-required="Convert to Currency is Required">
+              <option value="">Select a Currency</option>
+              <option id="USD2" value="USD">US Dollars</option>
+              <option id="MXN2" value="MXN">Mexican Peso</option>
+              <option id="CAD2" value="CAD">Canadian Dollar</option>
+              <option id="EUR2" value="EUR">Euro Dollar</option>
+              <option id="CNY2" value="CNY">Yuan Renminbi</option>
+            </select>
+      <label id="convertError" for="convertCurrency" class="error"></label>
+          <br><br>
+
+
+            <label class="formlabel">From Date:</label>
+            <input type="date" name="FromDate" id="FromDate" 
+                data-rule-required="true" data-msg-required="From Date is Required">
+            <label id="FromDateError" for="FromDate" class="error"></label>
+            <br><br>
+
+            <label class="formlabel">To Date:</label>
+            <input type="date" name="ToDate" id="ToDate" 
+			     data-rule-required="true" data-msg-required="To Date is Required">
+		    <label id="ToDateError" for="ToDate" class="error"></label>
+            <br><br>
+
+            <input type="button" value="Show Results" id="showResults" name="showResults" onclick="GetStock();">
+            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+            <hr>
+            <br>
+         
+            
+            <div class="clearfix">
+                <div class="img-container">
+                    <canvas id="chartjs-0" width="400" height="400"></canvas>
+                </div>
+                <div class="img-container">
+                    <canvas id="chartjs-1" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/js/convert.js"></script>
+    <script src="assets/js/graph.js"></script>
+
+</body>
+</html>

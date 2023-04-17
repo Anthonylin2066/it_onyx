@@ -1,0 +1,174 @@
+/* -------------Box Sizing--------------- */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+/* ------------Utility Styles------------- */
+
+.img-right {
+   float: right;
+   margin: 10px 0 10px 20px;
+   padding: 5px; 
+}
+
+.img-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    padding: 5px;
+}
+
+.img-center{
+    display:block;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+
+/* ------------Responsive Images----------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/*----- FONT CSS -------- */
+/*font-family: "bungee", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-family: "bungee", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-family: 'Raleway', sans-serif; */
+
+/* ------------- ADDED CLASSES --------------- */
+
+
+/*----Navigation CSS-----*/
+.background{
+    background-color: #19202B;
+}
+
+.white-text{
+    color: #fff;
+}
+
+.navigation-link{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    font-size: 16px;
+}
+
+
+.navbar1{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.red{
+    background: red;
+}
+
+
+
+/*---Contact---*/
+
+body{
+    background: #fff;
+    font-size:14px;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: #F5F5F5;
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background:#19202B;
+    color: #fff;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #19202B;
+}
+
+button{
+    background: #19202B;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3{
+    color: #19202B;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}

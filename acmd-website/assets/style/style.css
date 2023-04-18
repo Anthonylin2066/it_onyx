@@ -82,6 +82,15 @@ font-family: 'Raleway', sans-serif; */
 
 
 /*---Contact---*/
+.header-img{
+    position: relative;
+}
+
+.header-text{
+    text-align: center;
+    color: #000000;
+    position: absolute;
+}
 
 body{
     background: #fff;

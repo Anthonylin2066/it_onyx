@@ -1,3 +1,7 @@
+*{
+    font-family: 'Raleway', serif;
+}
+
 /* -------------Box Sizing--------------- */
 html {
     box-sizing: border-box;
@@ -38,16 +42,23 @@ img {
 }
 
 
-
-
 /*----- FONT CSS -------- */
 /*font-family: "bungee", sans-serif;
 font-weight: 400;
 font-style: normal;
+
 font-family: "bungee", sans-serif;
 font-weight: 700;
 font-style: normal;
+
 font-family: 'Raleway', sans-serif; */
+
+/*-- hex codes ----
+
+#19202B Blue
+#F2EFE8 Linen
+#55E300 Brown
+#46591D Green
 
 /* ------------- ADDED CLASSES --------------- */
 
@@ -69,6 +80,10 @@ font-family: 'Raleway', sans-serif; */
     font-size: 16px;
 }
 
+.cusbutton{
+    background-color: #46591D;
+    border-radius: 10px;
+}
 
 .navbar1{
     display:flex;
@@ -79,22 +94,321 @@ font-family: 'Raleway', sans-serif; */
     background: red;
 }
 
-
-
-/*---Contact---*/
-.header-img{
-    position: relative;
+.white{
+    background: #F2EFE8;
 }
 
-.header-text{
+/*---header images---*/
+
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#000000ab), url(../img/DSC04155.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 87vh;
+}
+
+.banner-text{
     text-align: center;
-    color: #000000;
-    position: absolute;
+    color: #fff;
+    padding-top: 180px;
 }
 
+.banner-text h1{
+    font-size: 70px
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#banner2{
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#000000ab), url(../img/DSC04219.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 87vh;
+}
+
+.banner-text2{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.banner-text2 h1{
+    font-size: 70px
+}
+
+.banner-text2 p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#banner3{
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#000000ab), url(../img/33df6e29-1a03-4dd1-b414-95a5e10655d3.lg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 87vh;
+}
+
+.banner-text3{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.banner-text3 h1{
+    font-size: 70px
+}
+
+.banner-text3 p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+/*--------about page--------*/
+
+/* article section*/
+#tad-bit{
+    background-color: #F8F8F8;
+    padding-bottom: 30px;
+}
+
+section#tad-bit h2{
+    text-align: center;
+    padding: 25px 0 0 0;
+    text-decoration: underline;
+    text-decoration-color: #46591D;
+}
+
+#tad-bit p {
+    font-size: 15px;
+}
+
+#photography p{
+    padding: 0 60px;
+}
+
+.qf-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 100px;
+}
+
+#tad-bit article.qf-post{
+    width: 33%;
+    padding: 10px 30px;
+}
+
+#tad-bit article.qf-post h3{
+    text-align: center;
+    font-size: 1.6em;
+    padding: 0 0 10px 0;
+    /*border-bottom: #46591D solid 1pt;*/
+}
+
+#tad-bit article.qf-post p{
+    text-align: left;
+}
+
+/* river levels section */
+
+#river-levels{
+    padding: 40px;
+}
+
+.level-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.river-table p {
+    font-size: 20px;
+}
+
+.river-table table{
+    border: 1pt solid;
+}
+
+.river-table thead{
+    background-color: #46591D;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 50px;
+    width: 100%;
+}
+
+.river-table td{
+    border: 1pt solid;
+}
+
+.td-center{
+    text-align: center;
+}
+
+
+/*photography section*/
+
+.photography-intro p{
+    text-align: center;
+}
+
+/*three photos*/
+
+.photos-1 , .photos-2, .photos-3 {
+    display:block;
+    width: 100%;
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.374);
+    border-radius: 7px;
+}
+
+
+#three-photos{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    max-height: 800px;
+    padding-bottom: 80px;
+}
+
+.image-wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 80px);
+    grid-template-rows: repeat(7, 80px);
+}
+
+img:nth-child(1) {
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 3;
+    z-index: 2;
+}
+
+img:nth-child(2) {
+    grid-column: 3 / span 9;
+    grid-row: 2 / span 4;
+}
+
+img:nth-child(3) {
+    grid-column: 10 / span 3;
+    grid-row: 4 / span 3;
+    z-index: 2;
+}
+
+/* Carousel Section*/
+
+.carousel-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.carousel-images{
+    padding: 60px;
+    background-color: #F1f1f1;
+}
+
+.carousel-images h4, .carousel-images a{
+    background-color: #46591D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.carouselExample button{
+    text-align: center;
+}
+
+.mission-statement h3{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #46591D;
+    margin-bottom: 40px;
+}
+
+.mission-statement{
+    background-color: #F8F8F8;
+    padding: 100px 70px;
+}
+
+.mission-statement p{
+    font-size: 15px;
+    max-width: 500px;
+    justify-content: center;
+}
+
+/*-----reservations page-----*/
+
+#reservation-content{
+    width: 80%;
+    margin: 40px auto;
+   /* background-color: burlywood; /* used to see container dimensions.. will be commented out */
+    padding: 15px;
+}
+
+.content-info1{
+    display: flex;
+    padding: 5px;
+    margin: 20px;
+}
+
+.content-info{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 20px;
+}
+
+.reserveimg-1, .reserveimg-2, .reserveimg-3{
+    display:block;
+    width: 100%;
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.374);
+    border-radius: 7px;
+}
+
+.content-text{
+    overflow-wrap: break-word;
+    margin-left: 30px;
+}
+
+.content-text h2{
+    margin-top: 5px;
+}
+
+.booqable-product-button{
+    justify-content: center;
+}
+
+#content-text1{
+    margin: 50px;
+    justify-content: center;
+}
+
+#content-text{
+    margin: 10px;
+}
+
+h3{
+    text-align: center;
+}
+
+.reserve{
+    background-color: #F1F1F1;
+    padding: 15px;
+    border: 1pt solid #19202B;
+    border-radius: 10px;
+}
+
+
+
+/*-----contact page-----*/  
 body{
     background: #fff;
     font-size:14px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .container{
@@ -181,3 +495,81 @@ tr td:first-child{
 tr td{
     padding-top: 20px;
 }
+
+
+
+/*Footer*/
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #19202B;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: rgb(85, 111, 138);
+}
+
+.footer-map{
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-bottom{
+    background: #19202B;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
